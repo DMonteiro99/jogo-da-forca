@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/forca.png">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+    <section class="jogo">
+        <a href="https://www.alura.com.br/" target="_blank" rel="noopener noreferrer"><img class="logo" src="assets/images/logo.svg" alt="Logo da alura com inicial da letra a"></a>
+        <div class="botoes-home" id="div-desaparece">
+            <a href="#forca"><input class="btn-iniciar" type="submit" value="Iniciar Jogo" id="iniciar-jogo"></a>
+            <button class="btn-palavra" id="nova-palavra" onclick="mostrarTelaAdicionarPalavra()">Adicionar Palavra</button>
+        </div>
+        <div class="palavra-nova" id="adicionar-palavra">
+            <input class="text-input" type="text" id="input-nova-palavra" maxlength="8" placeholder="Digite uma palavra">
+            <div class="form-group">
+                <img class="img-alerta" src="assets/images/!.png" alt="Símbolo de Alerta">
+                <label for="input-texto"> Máx. 8 letras</label>
+            </div>
+            <div class="botoes-div">
+                <input class="btn-azul" type="submit" value="Salvar e começar" id="btn-salvar">
+                <input class="btn-branco" type="submit" value="Cancelar" id="btn-cancelar">
+            </div>
+        </div>
+        <div class="canvas" id="div-aparece-forca">
+            <canvas id="forca" height="860px" width="1200px"></canvas>
+            <div class="sublinhado">
+
+            </div>
+            <div class="botoes-div-canvas">
+                <input class="btn-azul" type="submit" value="Novo Jogo" id="btn-novo-jogo">
+                <input class="btn-branco" type="submit" value="Sair" id="btn-sair">
+            </div>
+        </div>
+    </section>
+    <footer class="rodape">
+        <div>
+            <p>&copy; 2022 - Desenvolvido por:<br>Daniel Monteiro</p>
+            <a href="https://www.linkedin.com/in/daniel-monteiro-8386b0210" target="_blank" rel="noopener noreferrer"><img class="perfil-linkedin" src="assets/images/linkedin-logo.png" alt="Logo do Linkedin com apenas as letras finais in"></a>
+            <a href="https://github.com/DMonteiro99" target="_blank" rel="noopener noreferrer"><img class="perfil-github" src="assets/images/logo-github.png" alt="Logo GitHub"></a>
+            <a href="https://cursos.alura.com.br/user/daniel-monteiro-99" target="_blank" rel="noopener noreferrer"><img class="perfil-alura" src="assets/images/logoalura2.png" alt="Logo da alura com a inicial letra a"></a>
+            <div class="linha-divisoria"></div>
+            <img class="logo-one" src="assets/images/logoone.png" alt="Logo do programa da Oracle ONE Oracle Next Education">
+            <img class="logo-alura" src="assets/images/logoalura3.png" alt="Logo alura">
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="assets/js/forca.js"></script>
+    <script type="text/javascript" src="assets/js/canvas.js"></script>
+
+</body>
+</html>
