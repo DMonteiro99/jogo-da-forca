@@ -120,7 +120,8 @@ function verificarLetra(keyCode) {
 // faz com que os botões da tela de home desapareçam e mostra a tela de adicionar palavra
 function mostrarTelaAdicionarPalavra() {
     document.getElementById("div-desaparece").style.display = "none"
-    document.getElementById("adicionar-palavra").style.display = "block"  
+    document.getElementById("adicionar-palavra").style.display = "block"
+    document.getElementById('input-nova-palavra').focus()  
 }
   
 // salva a palavra que o usuário escreveu
@@ -139,6 +140,7 @@ function salvarPalavra() {
         iniciarJogo()
     } else {
         alert("Nenhuma palavra foi digitada")
+        document.getElementById('input-nova-palavra').focus()
     }
 }
   
